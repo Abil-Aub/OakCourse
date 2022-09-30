@@ -1,0 +1,1 @@
+metadata=res://*/PostModel.csdl|res://*/PostModel.ssdl|res://*/PostModel.msl;provider=System.Data.SqlClient;provider connection string="data source=LAPTOP-1IRDT7L8\SQLEXPRESS02;initial catalog=POSTDATA;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework"
