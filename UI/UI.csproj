@@ -60,10 +60,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Admin\Content\UserImages\" />
     <Folder Include="Areas\Admin\Content\SocialMediaImages\" />
     <Folder Include="Areas\Admin\Content\tempimage\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="wwwroot\UserImages\" />
   </ItemGroup>
 
   <ItemGroup>

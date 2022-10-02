@@ -1,22 +1,22 @@
 ﻿
 @{
-    ViewData["Title"] = "UpdateSocialMedia";
+    ViewData["Title"] = "AddUser";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
 <section class="content-header">
-    <h1>Update Social Media operation</h1>
+    <h1>Add User operation</h1>
     <ol class="breadcrumb float-sm-left">
         <li class="breadcrumb-item"><a>Admin</a></li>
-        <li class="breadcrumb-item"><a>Social Media</a></li>
-        <li class="breadcrumb-item active"><a>Update Social Media</a></li>
+        <li class="breadcrumb-item"><a>User</a></li>
+        <li class="breadcrumb-item active"><a>Add User</a></li>
     </ol>
 
 </section>
 
 <br />
 <div class="card-footer">
-    <a class="btn btn-primary" href="/Admin/SocialMedia/SocialMediaList">Social Media List</a>
+    <a class="btn btn-primary" href="/Admin/User/UserList">User List</a>
 </div>
 
 <section class="content">
@@ -24,12 +24,11 @@
         <div class="col-md-9">
             @Html.Partial("~/Areas/Admin/Views/Shared/MessageForm.cshtml")
             <div class="box box-primary">
-                @using(Html.BeginForm("UpdateSocialMedia", "SocialMedia", FormMethod.Post, new {@enctype="multipart/form-data"}))
+                @using(Html.BeginForm("AddUser", "User", FormMethod.Post, new {@enctype="multipart/form-data"}))
                 {
-                    @Html.Partial("Partial/SocialMediaForm")
+                    @Html.Partial("Partial/UserForm")
                 }
             </div>
         </div>
     </div>
 </section>
-
