@@ -1,22 +1,22 @@
-﻿@model List<DTO.SocialMediaDTO>
+﻿@model List<DTO.UserDTO>
 @{
-    ViewData["Title"] = "SocialMediaList";
+    ViewData["Title"] = "UserList";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
 <section class="content-header">
-    <h1>Social Media List</h1>
+    <h1>User List</h1>
     <ol class="breadcrumb float-sm-left">
         <li class="breadcrumb-item"><a>Admin</a></li>
-        <li class="breadcrumb-item"><a>Social Media</a></li>
-        <li class="breadcrumb-item active"><a>Social Media List</a></li>
+        <li class="breadcrumb-item"><a>User</a></li>
+        <li class="breadcrumb-item active"><a>User List</a></li>
     </ol>
 
 </section>
 
 <br />
 <div class="card-footer">
-    <a class="btn btn-primary" href="/Admin/SocialMedia/AddSocialMedia">Add Social Media</a>
+    <a class="btn btn-primary" href="/Admin/User/AddUser">Add User</a>
 </div>
 
 <div class="card">
@@ -27,7 +27,7 @@
                 <thead>
                 <tr>
                   <th>Name</th>
-                  <th>Link</th>
+                  <th>User Name</th>
                   <th>Image</th>
                   <th>Update</th>
                   <th>Delete</th>
@@ -38,13 +38,13 @@
                 {
                     <tr id="a_@item.ID">
                         <td>@item.Name</td>
-                        <td> @item.Link</td>
+                        <td> @item.Username</td>
                         <td> 
-                            <img src="~/SocialMediaImages/@item.ImagePath" width="60" height="40">
+                            <img src="~/UserImages/@item.ImagePath" width="60" height="40">
                         </td>
 
                         <td align="center" valign="middle">
-                            <a href="/Admin/SocialMedia/UpdateSocialMedia/@item.ID">
+                            <a href="/Admin/User/UpdateUser/@item.ID">
                                 <img src="~/icons/Update.ico">
                             </a>
                         </td>
@@ -61,7 +61,7 @@
                 <tfoot>
                 <tr>
                   <th>Name</th>
-                  <th>Link</th>
+                  <th>User Name</th>
                   <th>Image</th>
                   <th>Update</th>
                   <th>Delete</th>
@@ -72,3 +72,4 @@
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
+

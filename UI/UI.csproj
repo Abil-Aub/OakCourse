@@ -18,6 +18,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Areas\Admin\Content\UserImages\293d2542-4337-4ac9-89a1-6dc5f7621909téléchargement.png" />
+    <None Remove="Areas\Admin\Content\UserImages\77e2ef81-65ea-4a80-b740-e5b79321ce7c3024f8d283b734bd6b7e4fc5531fe2e9--create-a-cartoon-avatar.jpg" />
+    <None Remove="Areas\Admin\Content\UserImages\eee69b9e-a3e2-4575-a648-17b06c73c2bf20120606_234509_1548_nice.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Areas\Admin\Content\css\adminlte.min.css" />
     <Content Include="Areas\Admin\Content\css\adminlte.min.css.map" />
     <Content Include="Areas\Admin\Content\css\all.min.css" />
@@ -28,6 +34,18 @@
     <Content Include="Areas\Admin\Content\js\bootstrap.bundle.min.js.map" />
     <Content Include="Areas\Admin\Content\js\jquery.min.js" />
     <Content Include="Areas\Admin\Content\js\jquery.min.map" />
+    <Content Include="Areas\Admin\Content\UserImages\293d2542-4337-4ac9-89a1-6dc5f7621909téléchargement.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Areas\Admin\Content\UserImages\77e2ef81-65ea-4a80-b740-e5b79321ce7c3024f8d283b734bd6b7e4fc5531fe2e9--create-a-cartoon-avatar.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Areas\Admin\Content\UserImages\eee69b9e-a3e2-4575-a648-17b06c73c2bf20120606_234509_1548_nice.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Include="Areas\Admin\Content\webfonts\fa-brands-400.eot" />
     <Content Include="Areas\Admin\Content\webfonts\fa-brands-400.svg" />
     <Content Include="Areas\Admin\Content\webfonts\fa-brands-400.ttf" />
@@ -60,12 +78,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Content\UserImages\" />
     <Folder Include="Areas\Admin\Content\SocialMediaImages\" />
     <Folder Include="Areas\Admin\Content\tempimage\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="wwwroot\UserImages\" />
   </ItemGroup>
 
   <ItemGroup>

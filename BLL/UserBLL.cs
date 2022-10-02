@@ -35,5 +35,23 @@ namespace BLL
             string IPAddress = "127.0.0.1";
             LogDAO.AddLog(General.ProcessType.UserAdd, General.TableName.User, ID, IPAddress);
         }
+
+        public List<UserDTO> GetUsers()
+        {
+            return userdao.GetUsers();
+        }
+
+        public UserDTO GetUserWithID(int ID)
+        {
+            return userdao.GetUserWithID(ID);
+        }
+
+        public string UpdateUser(UserDTO model)
+        {
+            string oldImagePath = userdao.UpdateUser(model);
+            string IPAddress = "127.0.0.1";
+            LogDAO.AddLog(General.ProcessType.UserUpdate, General.TableName.User, model.ID, IPAddress);
+            return oldImagePath;
+        }
     }
 }
