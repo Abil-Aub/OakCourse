@@ -27,8 +27,8 @@ namespace UI.Areas.Admin.Controllers
                     UserStatic.isAdmin = user.isAdmin;
                     UserStatic.NameSurname = user.Name;
                     UserStatic.ImagePath = user.ImagePath;
-                    var addlist = Dns.GetHostEntry(Dns.GetHostName());
-                    string IPAddress = addlist.AddressList[3].ToString();
+                    // var addlist = Dns.GetHostEntry(Dns.GetHostName());
+                    string IPAddress = "127.0.0.1"; // addlist.AddressList[1].ToString(); // addlist.AddressList[3].ToString();
                     LogBLL.AddLog(General.ProcessType.Login, General.TableName.Login, 12, IPAddress);
                     return RedirectToAction("Index", "Post");
                 }

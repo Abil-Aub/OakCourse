@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -17,6 +18,6 @@ namespace DTO
         [Required(ErrorMessage = "Please fill link area")]
         public string Link { get; set; }
         [Display(Name ="Image")]
-        public HttpPostedFileBase SocialImage { get; set; }
+        public IFormFile SocialImage { get; set; }
     }
 }

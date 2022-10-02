@@ -9,6 +9,10 @@
   <ItemGroup>
     <Content Remove="wwwroot\icons\Delete.ico" />
     <Content Remove="wwwroot\icons\Update.ico" />
+    <Content Remove="wwwroot\SocialMediaImages\1777bd1c-da98-40cc-8e49-c55a8dbd0febicon_linkedin.png" />
+    <Content Remove="wwwroot\SocialMediaImages\787b1fe0-a37b-4b87-962f-de617e4be59fgive-money.png" />
+    <Content Remove="wwwroot\SocialMediaImages\d67b3e11-38db-41c6-bc33-4e8a072e1402icon_instagram.png" />
+    <Content Remove="wwwroot\SocialMediaImages\d8ad05ee-a685-4d63-8c84-7acd3fa7bfe1icon_twitter.png" />
     <Content Remove="wwwroot\tempimage\avatar.png" />
     <Content Remove="wwwroot\tempimage\logo.png" />
   </ItemGroup>
@@ -43,6 +47,7 @@
 
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.Owin.Host.SystemWeb" Version="4.2.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Core" Version="6.0.10" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.9" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
@@ -55,6 +60,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Admin\Content\SocialMediaImages\" />
     <Folder Include="Areas\Admin\Content\tempimage\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
@@ -63,6 +69,10 @@
   <ItemGroup>
     <None Include="wwwroot\icons\Delete.ico" />
     <None Include="wwwroot\icons\Update.ico" />
+    <None Include="wwwroot\SocialMediaImages\1777bd1c-da98-40cc-8e49-c55a8dbd0febicon_linkedin.png" />
+    <None Include="wwwroot\SocialMediaImages\787b1fe0-a37b-4b87-962f-de617e4be59fgive-money.png" />
+    <None Include="wwwroot\SocialMediaImages\d67b3e11-38db-41c6-bc33-4e8a072e1402icon_instagram.png" />
+    <None Include="wwwroot\SocialMediaImages\d8ad05ee-a685-4d63-8c84-7acd3fa7bfe1icon_twitter.png" />
     <None Include="wwwroot\tempimage\avatar.png" />
     <None Include="wwwroot\tempimage\logo.png" />
   </ItemGroup>

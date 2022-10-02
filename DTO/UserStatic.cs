@@ -8,7 +8,7 @@ namespace DTO
 {
     public static class UserStatic
     {
-        public static int UserID { get; set; } = 3;
+        public static int UserID { get; set; } = 2;
         public static bool isAdmin { get; set; }
         public static string NameSurname { get; set; }
         public static string ImagePath { get; set; }
