@@ -78,10 +78,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Admin\Content\AdsImages\" />
+    <Folder Include="Areas\Admin\Content\FavImages\" />
     <Folder Include="Areas\Admin\Content\SocialMediaImages\" />
     <Folder Include="Areas\Admin\Content\tempimage\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="wwwroot\AdsImages\" />
+    <Folder Include="wwwroot\FavImages\" />
   </ItemGroup>
 
   <ItemGroup>
