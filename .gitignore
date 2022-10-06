@@ -363,6 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # AND
-UI/App.config
-UI/Web.config
-DAL/App.config
+App.config
+Web.config
