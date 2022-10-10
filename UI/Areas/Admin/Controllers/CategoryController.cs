@@ -5,24 +5,31 @@ using Microsoft.AspNetCore.Mvc;
 namespace UI.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class MetaController : Controller
+    public class CategoryController : Controller
     {
-        // GET: Admin/Meta
-        MetaBLL bll = new MetaBLL();
-        public IActionResult AddMeta()
+        CategoryBLL bll = new CategoryBLL();
+        // Get: Admin/Category
+        public IActionResult CategoryList()
         {
-            MetaDTO dto = new MetaDTO();
+            List<CategoryDTO> model = new List<CategoryDTO>();
+            model = bll.GetCategoryList();
+            return View(model);
+        }
+        public IActionResult AddCategory()
+        {
+            CategoryDTO dto = new CategoryDTO();
             return View(dto);
         }
         [HttpPost]
-        public IActionResult AddMeta(MetaDTO model)
+        public IActionResult AddCategory(CategoryDTO model)
         {
             if (ModelState.IsValid)
             {
-                if (bll.AddMeta(model))
+                if (bll.AddCategory(model))
                 {
                     ViewBag.ProcessState = General.Messages.AddSuccess;
                     ModelState.Clear();
+                    model = new CategoryDTO();
                 }
                 else
                 {
@@ -33,39 +40,36 @@ namespace UI.Areas.Admin.Controllers
             {
                 ViewBag.ProcessState = General.Messages.EmptyArea;
             }
-            MetaDTO newmodel = new MetaDTO();
-            return View(newmodel);
-        }
-
-        public IActionResult MetaList()
-        {
-            List<MetaDTO> model = new List<MetaDTO>();
-            model = bll.GetMetaData();
+            
             return View(model);
         }
-
-        public IActionResult UpdateMeta(int ID)
+        public IActionResult UpdateCategory(int ID)
         {
-            MetaDTO model = new MetaDTO();
-            model = bll.GetMetaWithID(ID);
+            CategoryDTO model = new CategoryDTO();
+            model = bll.GetCategoryWithID(ID);
             return View(model);
         }
         [HttpPost]
-        public IActionResult UpdateMeta(MetaDTO model)
+        public IActionResult UpdateCategory(CategoryDTO model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                if (bll.UpdateMeta(model))
+                if (bll.UpdateCategory(model))
                 {
-                    ViewBag.ProcessState = General.Messages.UpdateSuccess;
+                    ViewBag.ProcessState = General.Messages.AddSuccess;
+                    ModelState.Clear();
+                    model = new CategoryDTO();
                 }
                 else
+                {
                     ViewBag.ProcessState = General.Messages.GeneralError;
+                }
             }
             else
             {
                 ViewBag.ProcessState = General.Messages.EmptyArea;
             }
+
             return View(model);
         }
     }

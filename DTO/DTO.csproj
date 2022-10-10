@@ -91,6 +91,7 @@
   <ItemGroup>
     <Compile Include="AddressDTO.cs" />
     <Compile Include="AdsDTO.cs" />
+    <Compile Include="CategoryDTO.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="FavDTO.cs" />
     <Compile Include="MetaDTO.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="SocialMediaDTO.cs" />
     <Compile Include="UserDTO.cs" />
     <Compile Include="UserStatic.cs" />
+    <Compile Include="VideoDTO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

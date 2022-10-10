@@ -69,6 +69,7 @@
     <Compile Include="Category.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="CategoryDAO.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Comment.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
@@ -131,6 +132,7 @@
     <Compile Include="Video.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="VideoDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">
