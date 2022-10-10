@@ -1,5 +1,6 @@
 ﻿using DAL;
 using DTO;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,11 @@ namespace BLL
             string IPAddress = "127.0.0.1"; ////////// TO-DO ////////////
             LogDAO.AddLog(General.ProcessType.CategoryAdd, General.TableName.Category, CatID, IPAddress);
             return true;
+        }
+
+        public static IEnumerable<SelectListItem> GetCategoriesForDropdown()
+        {
+            return CategoryDAO.GetCategoriesForDropdown();
         }
 
         public List<CategoryDTO> GetCategoryList()
