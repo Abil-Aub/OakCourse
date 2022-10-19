@@ -20,53 +20,53 @@
 </div>
 
 <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">DataTable with default features</h3>
-            </div>
-            <!-- /.card-header -->
-            <div class="card-body">
-              <table id="example1" class="table table-bordered table-striped">
-                <thead>
+    <div class="card-header">
+        <h3 class="card-title">DataTable with default features</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="example1" class="table table-bordered table-striped">
+            <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Meta Content</th>
-                  <th>Update</th>
-                  <th>Delete</th>
+                    <th>Name</th>
+                    <th>Meta Content</th>
+                    <th>Update</th>
+                    <th>Delete</th>
                 </tr>
-                </thead>
-                <tbody>
-                @foreach(var item in Model)
-                {
-                    <tr id="a_@item.MetaID">
-                        <td>@item.Name</td>
-                        <td>
-                            @item.MetaContent
-                        </td>
-                        <td align="center" valign="middle">
-                            <a href="/Admin/Meta/UpdateMeta/@item.MetaID">
-                                <img src="~/icons/Update.ico">
-                            </a>
-                        </td>
-                        <td align="center" valign="middle">
-                            <a href="#">
-                                <img src="~/icons/Delete.ico">
-                            </a>
-                        </td>
-                    </tr>  
-                }
-                
-                
-                </tbody>
-                <tfoot>
+            </thead>
+            <tbody>
+            @foreach(var item in Model)
+            {
+                <tr id="a_@item.MetaID">
+                    <td>@item.Name</td>
+                    <td>
+                        @item.MetaContent
+                    </td>
+                    <td align="center" valign="middle">
+                        <a href="/Admin/Meta/UpdateMeta/@item.MetaID">
+                            <img src="~/icons/Update.ico">
+                        </a>
+                    </td>
+                    <td align="center" valign="middle">
+                        <a href="#">
+                            <img src="~/icons/Delete.ico" onclick="AskQuestion('/Admin/Meta/DeleteMeta/',@item.MetaID);" />
+                        </a>
+                    </td>
+                </tr>  
+            }
+            </tbody>
+            <tfoot>
                 <tr>
-                  <th>Name</th>
-                  <th>Meta Content</th>
-                  <th>Update</th>
-                  <th>Delete</th>
+                    <th>Name</th>
+                    <th>Meta Content</th>
+                    <th>Update</th>
+                    <th>Delete</th>
                 </tr>
-                </tfoot>
-              </table>
-            </div>
-            <!-- /.card-body -->
-          </div>
-          <!-- /.card -->
+            </tfoot>
+        </table>
+    </div>
+    <!-- /.card-body -->
+    @Html.Partial("~/Areas/Admin/Views/Shared/ModalMessage.cshtml")
+</div>
+<script src="~/js/DeleteRecord.js"></script>
+<!-- /.card -->

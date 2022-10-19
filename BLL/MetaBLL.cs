@@ -48,5 +48,13 @@ namespace BLL
             LogDAO.AddLog(General.ProcessType.MetaUpdate, General.TableName.Meta, model.MetaID, IPAddress);
             return true;
         }
+
+        public void DeleteMeta(int ID)
+        {
+            dao.DeleteMeta(ID);
+            string IPAddress = "127.0.0.1";
+            LogDAO.AddLog(General.ProcessType.MetaDelete, General.TableName.Meta, ID, IPAddress);
+
+        }
     }
 }

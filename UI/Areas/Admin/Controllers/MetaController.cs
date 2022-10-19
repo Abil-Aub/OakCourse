@@ -68,5 +68,11 @@ namespace UI.Areas.Admin.Controllers
             }
             return View(model);
         }
+
+        public JsonResult DeleteMeta(int ID)
+        {
+            bll.DeleteMeta(ID);
+            return Json("");
+        }
     }
 }

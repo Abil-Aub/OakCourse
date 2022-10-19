@@ -9,6 +9,8 @@
   <ItemGroup>
     <Content Remove="wwwroot\icons\Delete.ico" />
     <Content Remove="wwwroot\icons\Update.ico" />
+    <Content Remove="wwwroot\js\DeleteRecord.js" />
+    <Content Remove="wwwroot\js\sweetalert2.min.js" />
     <Content Remove="wwwroot\SocialMediaImages\1777bd1c-da98-40cc-8e49-c55a8dbd0febicon_linkedin.png" />
     <Content Remove="wwwroot\SocialMediaImages\787b1fe0-a37b-4b87-962f-de617e4be59fgive-money.png" />
     <Content Remove="wwwroot\SocialMediaImages\d67b3e11-38db-41c6-bc33-4e8a072e1402icon_instagram.png" />
@@ -102,6 +104,7 @@
     <None Remove="Areas\Admin\Content\js\ckeditor\skins\moono-lisa\images\lock.png" />
     <None Remove="Areas\Admin\Content\js\ckeditor\skins\moono-lisa\images\refresh.png" />
     <None Remove="Areas\Admin\Content\js\ckeditor\skins\moono-lisa\images\spinner.gif" />
+    <None Remove="Areas\Admin\Content\js\site.js" />
     <None Remove="Areas\Admin\Content\UserImages\293d2542-4337-4ac9-89a1-6dc5f7621909téléchargement.png" />
     <None Remove="Areas\Admin\Content\UserImages\77e2ef81-65ea-4a80-b740-e5b79321ce7c3024f8d283b734bd6b7e4fc5531fe2e9--create-a-cartoon-avatar.jpg" />
     <None Remove="Areas\Admin\Content\UserImages\eee69b9e-a3e2-4575-a648-17b06c73c2bf20120606_234509_1548_nice.png" />
@@ -454,6 +457,10 @@
     </Content>
     <Content Include="Areas\Admin\Content\js\jquery.min.js" />
     <Content Include="Areas\Admin\Content\js\jquery.min.map" />
+    <Content Include="Areas\Admin\Content\js\site.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Include="Areas\Admin\Content\UserImages\293d2542-4337-4ac9-89a1-6dc5f7621909téléchargement.png">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
@@ -754,6 +761,8 @@
     <None Include="wwwroot\js\ckeditor\skins\moono-lisa\readme.md" />
     <None Include="wwwroot\js\ckeditor\styles.js" />
     <None Include="wwwroot\js\ckeditor\vendor\promise.js" />
+    <None Include="wwwroot\js\DeleteRecord.js" />
+    <None Include="wwwroot\js\sweetalert2.min.js" />
     <None Include="wwwroot\SocialMediaImages\1777bd1c-da98-40cc-8e49-c55a8dbd0febicon_linkedin.png" />
     <None Include="wwwroot\SocialMediaImages\787b1fe0-a37b-4b87-962f-de617e4be59fgive-money.png" />
     <None Include="wwwroot\SocialMediaImages\d67b3e11-38db-41c6-bc33-4e8a072e1402icon_instagram.png" />
